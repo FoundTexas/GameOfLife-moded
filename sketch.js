@@ -35,12 +35,17 @@ function siguienteGeneracion()
       let celda = tablero[x][y];
       let vecinos = cuentaVecinos(x, y);
 
-      if(celda ==0 && vecinos == 3){
+      if(celda ==0 && vecinos == 5){
         tablero_siguiente[x][y] = 1;
-      }else if(celda == 1 &&(vecinos > 3 || vecinos < 2)){
+      }else if(celda == 1 &&(vecinos > 5 || vecinos < 3)){
         tablero_siguiente[x][y] = 0;
-      }else{
+      }else if (celda == 0 &&(vecinos >3 || vecinos <5)) {
+        tablero_siguiente[x][y]= 1;
+
+        }
+      else{
         tablero_siguiente[x][y] = celda;
+
       }
 
     }
