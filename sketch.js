@@ -61,7 +61,7 @@ function cuentaVecinos(x, y){
   suma_vecinos += tablero[x + 1][y + 1];
   return suma_vecinos;
 }
-From Fernanda Numata to Everyone:  11:47 AM
+
 function pintaTablero(cols,ren){
   for(let x = 0; x < columnas; x+= 1){
     for(let y = 0; y < renglones; y+= 1){
