@@ -47,7 +47,7 @@ function siguienteGeneracion()
       let celda = tablero[x][y];
       let vecinos = cuentaVecinos(x, y);
 
-      if(celda ==0 && vecinos == 2){
+      if(celda ==0 && vecinos == 3){
         tablero_siguiente[x][y] = 1;
         switch(random(0,1)){
           case 0:
